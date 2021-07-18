@@ -7,4 +7,5 @@ Location for Certian Software / Repository for download in my scripts.
 
 ## Changelog
 
+- **2021-07-18** - Removed Powershell scripts for autogeneration of Version text files. No longer needed since i figured out the regex for the `Use-BasicParsing` switch in `Invoke-WebRequest`.
 - **2021-07-17** - Added Powershell Scripts to autogenerate Version text files that will be used in other scripts.
