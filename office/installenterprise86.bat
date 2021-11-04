@@ -1,0 +1,1 @@
+"%~dp0setup.exe" /configure "%~dp0configure/Office365-Enterprise-86.xml"
