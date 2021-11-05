@@ -5,6 +5,7 @@ If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     Start-Process powershell.exe -ArgumentList ("-NoProfile -ExecutionPolicy Bypass -File `"{0}`"" -f $PSCommandPath) -Verb RunAs
     Exit
 }
+
 $OSPP = Resolve-Path -Path "C:\Program Files*\Microsoft Offic*\Office*\ospp.vbs" | Select-Object -ExpandProperty Path -Last 1
 Write-Output -InputObject "OSPP Location is: $OSPP"
 $Command = "cscript.exe '$OSPP' /dstatus"
